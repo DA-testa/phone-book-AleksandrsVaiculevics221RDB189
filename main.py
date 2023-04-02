@@ -30,7 +30,9 @@ def process_queries(queries):
 #             else: # otherwise, just add it
 #                 contacts.append(cur_query)
         elif cur_query.type == 'del':
-            contacts.pop(cur_query.number, None)
+            if cur_query.number in contacts:
+                del contacts[cur_query.number]
+            #contacts.pop(cur_query.number, None)
 #             for j in range(len(contacts)):
 #                 if contacts[j].number == cur_query.number:
 #                     contacts.pop(j)
