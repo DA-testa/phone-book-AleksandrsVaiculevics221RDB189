@@ -36,7 +36,7 @@ def process_queries(queries):
 #                     contacts.pop(j)
 #                     break
         else:
-            response = contacts.get(cur_querry.number, 'not found')
+            response = contacts.get(cur_query.number, 'not found')
 #             for contact in contacts:
 #                 if contact.number == cur_query.number:
 #                     response = contact.name
