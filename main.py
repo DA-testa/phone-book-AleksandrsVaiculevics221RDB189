@@ -20,7 +20,7 @@ def process_queries(queries):
     contacts = []
     for cur_query in queries:
         if cur_query.type == 'add':
-            contacts[cur_querry.number] = cur_querry.name
+            contacts[cur_query.number] = cur_querry.name
             # if we already have contact with such number,
             # we should rewrite contact's name
 #             for contact in contacts:
@@ -30,7 +30,7 @@ def process_queries(queries):
 #             else: # otherwise, just add it
 #                 contacts.append(cur_query)
         elif cur_query.type == 'del':
-            contacts.pop(cur_querry.number, None)
+            contacts.pop(cur_query.number, None)
 #             for j in range(len(contacts)):
 #                 if contacts[j].number == cur_query.number:
 #                     contacts.pop(j)
